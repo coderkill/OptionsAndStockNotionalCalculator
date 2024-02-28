@@ -5,7 +5,7 @@ public class PositionDetails {
     int positionSize;
     double startPrice;
     String tradingCurrency;
-    float fxRate;
+    double fxRate;
 
     public PositionDetails(InstrumentDetails instrumentDetails, int positionSize) {
         this.instrumentDetails = instrumentDetails;
@@ -28,7 +28,7 @@ public class PositionDetails {
         return tradingCurrency;
     }
 
-    public float getFxRate() {
+    public double getFxRate() {
         return fxRate;
     }
 
@@ -44,7 +44,7 @@ public class PositionDetails {
         this.tradingCurrency = tradingCurrency;
     }
 
-    public void setFxRate(float fxRate) {
+    public void setFxRate(double fxRate) {
         this.fxRate = fxRate;
     }
 }
