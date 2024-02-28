@@ -1,11 +1,13 @@
 package POJO;
 
+import java.util.Date;
+
 public class InstrumentDetails {
     String ticker;
     String tradingCurrency;
     String securityType;
-    String maturityDate;
-    float strikePrice;
+    Date maturityDate;
+    double strikePrice;
     String underlyingTicker;
     int lotSize=1;
 
@@ -33,19 +35,19 @@ public class InstrumentDetails {
         this.securityType = securityType;
     }
 
-    public String getMaturityDate() {
+    public Date getMaturityDate() {
         return maturityDate;
     }
 
-    public void setMaturityDate(String maturityDate) {
+    public void setMaturityDate(Date maturityDate) {
         this.maturityDate = maturityDate;
     }
 
-    public float getStrikePrice() {
+    public double getStrikePrice() {
         return strikePrice;
     }
 
-    public void setStrikePrice(float strikePrice) {
+    public void setStrikePrice(double strikePrice) {
         this.strikePrice = strikePrice;
     }
 

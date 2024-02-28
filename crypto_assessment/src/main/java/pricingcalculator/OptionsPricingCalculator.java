@@ -44,7 +44,7 @@ public class OptionsPricingCalculator {
      *            = Implied volatility of returns of underlying stock/asset
      * @return
      */
-    public double calculate(boolean callOption, double s, double k,
+    public static double calculate(boolean callOption, double s, double k,
                                    double r, double t, double v) {
 
         //System.out.println("    ----- ");
@@ -85,7 +85,7 @@ public class OptionsPricingCalculator {
      *            = Implied volatility of returns of underlying stock/asset
      * @return
      */
-    private double d1(double s, double k, double r, double t, double v) {
+    private static double d1(double s, double k, double r, double t, double v) {
 
         double top = Math.log(s / k) + (r + Math.pow(v, 2) / 2) * t;
         double bottom = v * Math.sqrt(t);
@@ -107,11 +107,11 @@ public class OptionsPricingCalculator {
      *            = Implied volatility of returns of underlying stock/asset
      * @return
      */
-    private double d2(double s, double k, double r, double t, double v) {
+    private static double d2(double s, double k, double r, double t, double v) {
         return d1(s, k, r, t, v) - v * Math.sqrt(t);
     }
 
-    public double cumulativeDistribution(double x) {
+    public static double cumulativeDistribution(double x) {
 
         //System.out.println(" in BlackScholesFormula:cumulativeDitibution(" + x + ")");
 
@@ -145,7 +145,7 @@ public class OptionsPricingCalculator {
      * @param x
      * @return
      */
-    public double standardNormalDistribution(double x) {
+    public static double standardNormalDistribution(double x) {
 
         //System.out.println(" in BlackScholesFormula:standardNormalDistribution(" + x + ")");
         double top = Math.exp(-0.5 * Math.pow(x, 2));

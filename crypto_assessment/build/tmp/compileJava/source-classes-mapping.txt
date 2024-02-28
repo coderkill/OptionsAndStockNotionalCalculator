@@ -1,5 +1,13 @@
 POJO/MarketData.java
  POJO.MarketData
+positioninitializer/MockPositionsReader.java
+ positioninitializer.MockPositionsReader
+positioninitializer/enrichers/Enricher.java
+ positioninitializer.enrichers.Enricher
+pricingcalculator/OptionsPricingCalculatorSeconds.java
+ pricingcalculator.OptionsPricingCalculatorSeconds
+service/CustomSpringService.java
+ service.CustomSpringService
 marketdataservice/MarketDataServer.java
  marketdataservice.MarketDataServer
  marketdataservice.ServerThreadContinous
@@ -7,25 +15,34 @@ pricingcalculator/OptionsPricingCalculator.java
  pricingcalculator.OptionsPricingCalculator
 RestServiceApp.java
  RestServiceApp
+positioninitializer/enrichers/PriceEnricher.java
+ positioninitializer.enrichers.PriceEnricher
 POJO/PositionDetails.java
  POJO.PositionDetails
 common/Currency.java
  common.Currency
-notionalCalculator/OptionsAndEquitiesCalculator.java
- notionalCalculator.OptionsAndEquitiesCalculator
 controller/NotionalRequestController.java
  controller.NotionalRequestController
-positionreader/MockPositionsReader.java
- positionreader.MockPositionsReader
+positioninitializer/enrichers/DbPositionsEnricher.java
+ positioninitializer.enrichers.DbPositionsEnricher
 pricingcalculator/StockPricingCalculator.java
  pricingcalculator.StockPricingCalculator
-pricingcalculator/StockPricingCalculatorTemp.java
- pricingcalculator.StockPricingCalculatorTemp
 sqllite/SQLiteConnection.java
  sqllite.SQLiteConnection
+service/NotionalService.java
+ service.NotionalService
+POJO/NotionalData.java
+ POJO.NotionalData
+sqllite/TableCreationAndPopulationService.java
+ sqllite.TableCreationAndPopulationService
 POJO/InstrumentDetails.java
  POJO.InstrumentDetails
-sqllite/TableCreationService.java
- sqllite.TableCreationService
 notionalCalculator/NotionalCalculator.java
  notionalCalculator.NotionalCalculator
+positioninitializer/enrichers/FxEnricher.java
+ positioninitializer.enrichers.FxEnricher
+pricingcalculator/StockPricingCalculatorSeconds.java
+ pricingcalculator.StockPricingCalculatorSeconds
+notionalCalculator/OptionsAndEquitiesNotionalCalculator.java
+ notionalCalculator.OptionsAndEquitiesNotionalCalculator
+ notionalCalculator.OptionsAndEquitiesNotionalCalculator$MarketDataGenerator
